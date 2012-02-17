@@ -1,5 +1,9 @@
 DemoApp::Application.routes.draw do
   root :to => 'pages#index'
+  match '/users' => 'users#main'
+  match '/users/new' => 'users#new', :as => :new_user
+  match '/users/create' => 'users#create', :as => :create_user
+  match '/users/:id/delete' => 'users#delete', :as => :delete_user
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

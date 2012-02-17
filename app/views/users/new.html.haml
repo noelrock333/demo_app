@@ -1,0 +1,17 @@
+= form_for @user, :url => "create" do |f|
+	= f.label :name
+	= f.text_field :name
+	%br
+	= f.label :age
+	= f.text_field :age
+	%br
+	= f.label :addres
+	= f.text_field :addres
+	%br 
+	= f.label :status
+	= f.text_field :status
+	%br
+	= f.label :bio
+	= f.text_field :bio
+	%br
+	= f.submit "Crear usuario"
